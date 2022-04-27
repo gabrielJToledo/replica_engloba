@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo"><img src="./assets/logo.png" alt="logo"></div>
+        <div class="menu"><img src="./assets/menu.png" alt="menu">
+            <div class="dropdown-content">
+                <div class="dropA"><a href="">Transporte (TWS)</a></div>
+                <div class="dropdown-second-content">
+                    <a href="">Transporte (TWS)</a>
+                </div>
+                <a href="">Estoque (MWS)</a>
+                <a href="">Gestão</a>
+                <a href="">Financeiro</a>
+                <a href="">Ferramentas</a>
+                <a href="">Cadastros</a>
+            </div>
+        </div>
+        <div class="search">
+            <div class="dropdown"><span>Código</span><img src="./assets/arrow.png" alt="arrow" class="iconArrow">
+                <div class="dropdown-codigo">
+                    <a href="">Código</a>
+                    <a href="">Número do pedido</a>
+                    <a href="">Número do cliente</a>
+                    <div class="divider"></div>
+                    <a href="">CNPJ/CPF do destinatário</a>
+                    <div class="divider"></div>
+                    <a href="">Número da nota fiscal</a>
+                    <a href="">Chave da NF-e</a>
+                    <div class="divider"></div>
+                    <a href="">Número do CT-e ou NFS-e</a>
+                    <a href="">Chave CT-e ou NFS-e</a>
+                    <div class="divider"></div>
+                    <a href="">Número do volume</a>
+                    <a href="">Número dos Correios</a>
+                    <div class="divider"></div>
+                    <a href="">Chave (nosso número)</a>
+                </div>
+            </div>
+            <form action="">
+                <input type="text" name="search" placeholder="Pesquisar..."></input>
+            </form> 
+            <button class="button"><img src="./assets/search.png" alt="lupa"></i></button>
+        </div>
+        <div class="avatar">
+            <img src="./assets/calendarClock.png" alt="Calendar" class="iconNav">
+            <img src="./assets/iconPostit.png" alt="Postit" class="iconNav">
+            <img src="./assets/bell.png" alt="Bell" class="iconNav">
+            <img src="./assets/help.png" alt="Help" class="iconNav">
+            <img src="./assets/avatar.png" alt="Avatar" class="iconAvatar"><img src="./assets/arrow.png" alt="" class="iconArrow">
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="dashboard">
+            <a href="" class="dashCards">
+                <img src="./assets/delivery-truck.png" alt="op">
+                <span>Operações</span>
+            </a>
+            <a href="" class="dashCards">
+                <img src="./assets/graphic.png" alt="op">
+                <span>Operações</span>
+            </a>
+            <a href="" class="dashCards">
+                <img src="./assets/coins.png" alt="op">
+                <span>Operações</span>
+            </a>
+            <a href="" class="dashCards">
+                <img src="./assets/fix.png" alt="op">
+                <span>Operações</span>
+            </a>
+            <a href="" class="dashCards">
+                <img src="./assets/server.png" alt="op">
+                <span>Operações</span>
+            </a>
+            <a href="" class="dashCards">
+                <img src="./assets/gear.png" alt="op">
+                <span>Operações</span>
+            </a>
+        </div>
+
+        
+        <div class="graphicsContent">
+            <button class="arrowIcon" id="arrowLeft"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="carousel">
+                <div id="containerSlide">
+                    <div class="graphics">
+                        <canvas id="firstChart" style="width: 750px;"></canvas>
+                    </div>
+                    <div class="graphics">
+                        <canvas id="secondChart" style="width: 750px;"></canvas>
+                    </div>
+                    <div class="graphics">
+                        <canvas id="thirdChart" style="width: 750px;"></canvas>
+                    </div>
+                </div>
+            </div>
+            <button class="arrowIcon" id="arrowRight"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/875f8b0581.js" crossorigin="anonymous"></script>
+    <script src="./node_modules/chart.js/dist/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
